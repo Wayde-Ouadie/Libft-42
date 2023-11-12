@@ -6,7 +6,7 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:28:45 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/10 23:17:46 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/12 04:38:24 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	long	num;
 
-	if (fd < 0)
-		return ;
 	num = n;
 	if (num < 0)
 	{
