@@ -6,7 +6,7 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:34:18 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/09 09:30:31 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/12 04:16:48 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	a;
-	char	*res;
-	char	*org;
+	unsigned char	*res;
+	unsigned char	*org;
 
 	a = 0;
-	res = (char *)dest;
-	org = (char *)src;
+	res = (unsigned char *)dest;
+	org = (unsigned char *)src;
 	if (!res && !org)
 		return (0);
 	while (a < n)
