@@ -27,7 +27,7 @@ ${NAME}: ${OBJ}
 .c.o: libft.h
 	@${CC} ${FLAG} -c $<
 
-bonus : ${NAME} ${BOBJ}
+bonus : ${BOBJ}
 	@echo "Compiling bonus."
 	@${LIB} ${NAME} ${BOBJ}
 
