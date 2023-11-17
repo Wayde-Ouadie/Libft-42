@@ -6,18 +6,18 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 18:57:22 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/11 00:44:26 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/17 17:55:42 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *back)
 {
-	if (!lst || !new)
+	if (!lst || !back)
 		return ;
 	if (*lst != NULL)
-		ft_lstlast(*lst)->next = new;
+		ft_lstlast(*lst)->next = back;
 	else
-		*lst = new;
+		*lst = back;
 }
