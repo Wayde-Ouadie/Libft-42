@@ -6,13 +6,13 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:26:25 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/10 19:07:51 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/16 01:03:46 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_size_check(int n)
+static int	ft_size_check(int n)
 {
 	int	size;
 

@@ -24,7 +24,7 @@ ${NAME}: ${OBJ}
 	@echo "Compiling mandatory part."
 	@${LIB} ${NAME} ${OBJ}
 
-.c.o: libft.h
+%.o:%.c libft.h
 	@${CC} ${FLAG} -c $<
 
 bonus : ${BOBJ}

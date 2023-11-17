@@ -6,13 +6,13 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:11:30 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/09 13:55:22 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/16 01:05:04 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_words(const char *s, char c)
+static int	ft_words(const char *s, char c)
 {
 	int	a;
 	int	words;
@@ -36,7 +36,7 @@ int	ft_words(const char *s, char c)
 	return (words);
 }
 
-void	ft_memoryfree(char **res, int a)
+static void	ft_memoryfree(char **res, int a)
 {
 	int	b;
 
@@ -49,7 +49,7 @@ void	ft_memoryfree(char **res, int a)
 	free(res);
 }
 
-char	**ft_fill(const char *s, char **res, char c)
+static char	**ft_fill(const char *s, char **res, char c)
 {
 	int			a;
 	char		*str;

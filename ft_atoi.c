@@ -6,13 +6,13 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 06:18:28 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/14 23:40:06 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/16 01:03:33 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_sign(char c)
+static int	ft_sign(char c)
 {
 	if (c == 45)
 		return (-1);
