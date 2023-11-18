@@ -36,7 +36,7 @@ clean:
 	@${RM} ${OBJ} ${BOBJ}
 
 fclean: clean
-	@echo "Removing libft.a."
+	@echo "Removing library"
 	@${RM} ${NAME} ${bonus}
 
 re: fclean all
