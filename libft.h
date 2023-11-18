@@ -6,7 +6,7 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 18:41:32 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/18 22:48:12 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/18 22:51:30 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
-# include <string.h>
 
 typedef struct s_list
 {
