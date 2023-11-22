@@ -15,8 +15,14 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*s;
+	long	i;
+	long	j;
 	size_t	mult;
 
+	j = nmemb;
+	i = size;
+	if (i < 0 && j < 0)
+		return (NULL);
 	mult = nmemb * size;
 	if (mult / nmemb != size)
 		return (NULL);
