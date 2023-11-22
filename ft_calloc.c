@@ -6,7 +6,7 @@
 /*   By: oel-feng <oel-feng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:18:18 by oel-feng          #+#    #+#             */
-/*   Updated: 2023/11/15 19:11:45 by oel-feng         ###   ########.fr       */
+/*   Updated: 2023/11/22 11:52:50 by oel-feng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*s;
-	long	i;
-	long	j;
+	size_t	mult;
 
-	i = nmemb;
-	j = size;
-	if (i < 0 && j < 0)
+	mult = nmemb * size;
+	if (mult / nmemb != size)
 		return (NULL);
-	s = (void *)malloc(nmemb * size);
+	s = (void *)malloc(mult);
 	if (!s)
 		return (0);
-	ft_bzero(s, (nmemb * size));
+	ft_bzero(s, (mult));
 	return (s);
 }
