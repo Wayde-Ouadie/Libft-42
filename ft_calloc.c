@@ -25,6 +25,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	s = (void *)malloc(j * i);
 	if (!s)
 		return (0);
-	ft_bzero(s, (mult));
+	ft_bzero(s, (j * i));
 	return (s);
 }
